@@ -1,12 +1,8 @@
 import React from 'react'
 
-const debug = (variable = undefined) => {
-  debugger
-}
-
-const Main = (teste) => (
+const Main = (posts) => (
   <main className="blog-content">
-    {teste}
+    {posts}
   </main>
 )
 
