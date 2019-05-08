@@ -11,7 +11,7 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout posts={posts} location={this.props.location} title={siteTitle}>
+      <Layout data={data} posts={posts} location={this.props.location} title={siteTitle}>
         {
           posts.map(({ node }) => {
             return (
@@ -48,6 +48,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            img
           }
         }
       }
