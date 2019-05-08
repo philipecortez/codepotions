@@ -1,0 +1,99 @@
+.blog-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background-color: var(--purple);
+  color: var(--orange);
+  font-size: 1.2rem;
+  text-shadow: .1rem .1rem .1rem var(--gray);
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.blog-nav h1{
+  padding: 1.1rem;
+}
+
+.blog-nav #hb-menu {
+  padding: 1.1rem; 
+}
+
+.hb-buttons {
+  background-color: var(--light-purple);
+  width: 100%;
+  color: var(--light-orange);
+}
+
+.hb-buttons ul {
+  list-style: none;
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hb-buttons ul > li {
+  margin-bottom: 5px;
+  padding: 12px;
+}
+
+.hb-buttons ul > li:nth-of-type(2) {
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+}
+
+.hb-buttons ul > li > a {
+  text-decoration: none;
+  color: var(--light-orange);
+}
+
+@media all and (min-width: 1025px) {
+  .hb-init {
+    display: none;
+  }
+
+  .hb-buttons {
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    width: 45%;
+    background: var(--purple);
+  }
+
+  .hb-buttons ul li {
+    display: inline-block;
+    width: 27%;
+    border: none !important;
+    color: var(--orange);
+  }
+
+  .hb-buttons ul a {
+    position: relative;
+  }
+
+  .hb-buttons ul li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #f3eedd;
+    width: 0;
+    height: 3px;
+    top: -20px; bottom: 0; left: 0; right: 0;
+    margin-top: 50px;
+    transition: width .3s linear, background .5s linear;
+  }
+
+  .hb-buttons > ul > li> a:hover::after {
+    position: absolute;
+    background: var(--light-orange);
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1524px) {
+  .hb-buttons {
+    width: 30%;
+  }
+}

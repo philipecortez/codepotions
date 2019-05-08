@@ -1,0 +1,53 @@
+.blog-footer {
+  width: 100%;
+  background-color: var(--lite-gray);
+  color: var(--white);
+  margin-top: 30px;
+}
+
+.blog-footer .social-media {
+  padding: 1rem;
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.blog-footer p {
+  text-align: center;
+  padding: 1rem;
+  margin: auto 5em;
+  border-top: 1px solid white;
+}
+
+.blog-footer .social-media li:nth-child(2) {
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+.blog-footer .social-media li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.blog-footer .social-media li a:hover {
+  text-decoration: underline;
+}
+
+.blog-footer .fab {
+  margin-right: 5px;
+}
+
+.fa-github{
+  color: var(--gray);
+}
+
+.fa-linkedin {
+  color: #0077B5;
+}
+
+.fa-bitcoin {
+  color: #f7931a;
+}
