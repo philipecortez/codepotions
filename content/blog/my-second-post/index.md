@@ -1,7 +1,7 @@
 ---
 title: My Second Post!
 date: "2015-05-06T23:46:37.121Z"
-img: "a path to a image"
+img: https://www.helpscout.com/images/blog/2019/apr/sabbatical-from-work.gif
 ---
 
 Wow! I love blogging so much already.
