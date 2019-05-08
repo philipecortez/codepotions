@@ -1,11 +1,15 @@
 import React from 'react'
 
-const Post = (teste) => (
+const Post = ({
+  img,
+  title,
+  excerpt
+}) => (
   <div className="post">
-    <img src={teste.img} alt=""/>
+    <img src={img} alt=""/>
     <div className="post-resume">
-      <h3>{teste.title}</h3>
-      <p>{teste.excerpt}</p>
+      <h3>{title}</h3>
+      <p>{excerpt}</p>
     </div>
   </div>
 )
