@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   justify-content: center;
 }
 
@@ -71,6 +72,6 @@
 
 @media all and (min-width: 1480px) {
   .blog-content {
-    margin: auto 200px;
+    margin: auto 200px 30px;
   }
 }
