@@ -8,7 +8,7 @@ class Contact extends Component {
 
     return(
       <Layout location={location} mainContentClass={"form-container"} title={siteTitle}>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
           <h1>Contact Me </h1>
 
           <p>
@@ -26,11 +26,18 @@ class Contact extends Component {
             <input className="form-input" type="email" name="email-input" id="email-input"/>
           </label>
 
+          <label for="bot-field" className="hidden-field">
+            Email:
+            <input tabindex="-1" className="form-input" type="email" name="bot-field" id="bot-field"/>
+          </label>
+
            <label for="message-input">
             Message:
             <textarea wrap="soft" className="form-text-area" name="message-input" id="message-input" rows="4" maxlength="300" />
           </label>
+
           <input type="hidden" name="form-name" value="contact" />
+
           <input className="form-input" type="submit" value="Send" />
         </form>
       </Layout>
