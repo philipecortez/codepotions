@@ -29,6 +29,11 @@ const Nav = () => (
     <div className="hb-buttons toggle-content" hidden={true}>
       <ul>
         <li>
+          <Link to="/">
+            Home
+          </Link>
+        </li>
+        <li>
           <Link to="/contact">
             Contact
           </Link>
@@ -37,11 +42,6 @@ const Nav = () => (
           <a href="https://www.linkedin.com/in/philipe-cortez/">
             Resume
           </a>
-        </li>
-        <li>
-          <Link to="#">
-            Videos
-          </Link>
         </li>
       </ul>
     </div>
