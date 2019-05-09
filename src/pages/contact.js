@@ -30,6 +30,7 @@ class Contact extends Component {
             Message:
             <textarea wrap="soft" className="form-text-area" name="message-input" id="message-input" rows="4" maxlength="300" />
           </label>
+          <input type="hidden" name="form-name" value="contact" />
           <input className="form-input" type="submit" value="Send" />
         </form>
       </Layout>
