@@ -52,6 +52,11 @@
     cursor: pointer;
     width: 40%;
     margin-top: 49px !important;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  .blog-content .post {
     transition: box-shadow 0.3s linear;
   }
 
