@@ -13,7 +13,7 @@ class Layout extends Component {
       <>
         <Nav />
         {
-          location.pathname == "/" ? 
+          location.pathname === "/" ?
           <Header /> : 
           ""
         }

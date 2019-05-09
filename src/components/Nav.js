@@ -22,7 +22,7 @@ const Nav = () => (
   <nav className="blog-nav">
     <h1>Code Potions *</h1>
     <div className="hb-init">
-      <a onClick={() => toggleMobalBar()} id="hb-menu">
+      <a href="#" onClick={() => toggleMobalBar()} id="hb-menu">
          <i className="fas fa-bars"></i>
       </a>
     </div>
