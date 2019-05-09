@@ -6,7 +6,7 @@ const Post = ({
   excerpt
 }) => (
   <div className="post">
-    <img src={img} alt=""/>
+    <img src={img} alt="" style={{width: "440px", height: "246px"}}/>
     <div className="post-resume">
       <h3>{title}</h3>
       <p>{excerpt}</p>
