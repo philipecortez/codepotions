@@ -29,7 +29,7 @@ const Nav = () => (
     <div className="hb-buttons toggle-content" hidden={true}>
       <ul>
         <li>
-          <Link to="#">
+          <Link to="/contact">
             Contact
           </Link>
         </li>

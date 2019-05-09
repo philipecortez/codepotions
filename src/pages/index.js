@@ -6,12 +6,12 @@ import Layout from "../components/Layout"
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props
+    const { data, location } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout data={data} posts={posts} location={this.props.location} title={siteTitle}>
+      <Layout location={location} mainContentClass={"blog-content"} data={data}  title={siteTitle}>
         {
           posts.map(({ node }) => {
             return (

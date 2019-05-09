@@ -7,13 +7,17 @@ import Footer from './Footer'
 
 class Layout extends Component {
   render() {
-    const { children, data } = this.props
+    const { children, location, mainContentClass } = this.props
 
     return (
       <>
         <Nav />
-        <Header />
-        <main className="blog-content">{children}</main>
+        {
+          location.pathname == "/" ? 
+          <Header /> : 
+          ""
+        }
+        <main className={mainContentClass}>{children}</main>
         <Footer />
       </>
     )
