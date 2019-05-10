@@ -8,12 +8,12 @@ import Footer from './Footer'
 class Layout extends Component {
   render() {
     const { children, location, post, isFeatured, mainContentClass } = this.props
-
+    const noHeaderLocations = ["/contact", "/contact/", "/404", "/404/", "/404.html"]
     return (
       <>
         <Nav />
         {
-          location.pathname === "/contact" ?
+          noHeaderLocations.includes(location.pathname) ?
           "" :
           <Header post={post} isFeatured={isFeatured}/>
         }
