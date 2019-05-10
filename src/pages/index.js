@@ -9,9 +9,17 @@ class BlogIndex extends React.Component {
     const { data, location } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
+    const featuredPost = posts[0].node
 
     return (
-      <Layout location={location} mainContentClass={"blog-content"} data={data}  title={siteTitle}>
+      <Layout
+        location={location}
+        mainContentClass={"blog-content"}
+        data={data}
+        title={siteTitle}
+        post={featuredPost}
+        isFeatured={true}
+      >
         {
           posts.map(({ node }) => {
             return (
@@ -20,6 +28,7 @@ class BlogIndex extends React.Component {
                 title={node.frontmatter.title}
                 excerpt={node.frontmatter.description}
                 path={node.fields.slug}
+                imgBgColor={node.frontmatter.backgroundColor}
                 key={node.frontmatter.id}
               />
             )
@@ -51,6 +60,7 @@ export const pageQuery = graphql`
             img
             description
             id
+            backgroundColor
           }
         }
       }

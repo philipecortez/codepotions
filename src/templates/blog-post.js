@@ -10,21 +10,14 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <div className="post-content">
-          <h1>{post.frontmatter.title}</h1>
-
-          <p>
-            {post.frontmatter.date}
-          </p>
-
-          <hr/>
-
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-
-        </div>
-
-
+      <Layout
+        mainContentClass={"post-content"}
+        location={this.props.location}
+        title={siteTitle}
+        post={post}
+        isFeatured={false}
+      >
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Layout>
     )
   }
@@ -47,6 +40,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        img
+        backgroundColor
       }
     }
   }

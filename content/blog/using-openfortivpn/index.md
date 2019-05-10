@@ -3,6 +3,7 @@ title: "Using Openfortivpn"
 date: "2019-05-09T18:46:37.121Z"
 img: "forticlient-logo.png"
 description: "How to install and use openfotivpn on linux to connect to fortinet vpn"
+backgroundColor: "7F8C8D"
 id: 1
 ---
 Some of us have the need to use a **Fortissl VPN** to connect to their company network or maybe for privacy reasons anywhays, it's doesn't matters.
