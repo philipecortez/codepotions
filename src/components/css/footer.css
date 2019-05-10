@@ -29,6 +29,7 @@
 .blog-footer .social-media li a {
   text-decoration: none;
   color: var(--white);
+  font-weight: 600;
 }
 
 .blog-footer .social-media li a:hover {
@@ -43,10 +44,10 @@
   color: var(--gray);
 }
 
-.fa-linkedin {
+.fa-linkedin-in {
   color: #0077B5;
 }
 
-.fa-bitcoin {
+.fa-btc {
   color: #f7931a;
 }
