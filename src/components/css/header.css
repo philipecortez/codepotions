@@ -17,14 +17,15 @@
 
 .blog-header h2 {
   font-weight: lighter;
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   margin: 8px 0;
+  padding: 0 .9rem;
 }
 
 .blog-header .featured {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   margin: 8px 0;
 }
 
@@ -38,6 +39,10 @@
 @media all and (min-width: 1025px) {
   .blog-header {
     cursor: pointer;
+  }
+
+  .blog-header h2 {
+    font-size: 2.3rem;
   }
 
   .blog-header h2:hover {

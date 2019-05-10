@@ -1,5 +1,5 @@
 .post-content {
-  margin: 150px auto 80px;
+  margin: 0 auto 80px;
   width: 90%;
   line-height: 1.9rem;
   color: var(--gray);
@@ -17,7 +17,6 @@
   font-size: 2rem;
   font-weight: 100;
 }
-
 
 .post-content pre {
   border-radius: 10px;
