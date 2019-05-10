@@ -6,7 +6,6 @@ const LayoutNotFound = (children) => {
   debugger;
   return (
     <>
-      {children.map((el) => { return el})}
     </>
   )
 }

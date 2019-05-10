@@ -1,11 +1,12 @@
 ---
-title: "Using Openfortivpn"
+title: "How to install and use Openfortivpn on Linux"
 date: "2019-05-09T18:46:37.121Z"
-img: "forticlient-logo.png"
+img: "forticlient-logo.jpg"
 description: "How to install and use openfotivpn on linux to connect to fortinet vpn"
 id: 1
-backgroundColor: "#3498DB"
+backgroundColor: "#8bd6f6"
 ---
+## Introduction
 Some of us have the need to use a **Fortissl VPN** to connect to their company network or maybe for privacy reasons anywhays, it's doesn't matters.
 
 The fact is I've seen that a lot of people tend to use some clients like the **fortisslvpn-client** to connect to those VPN's and I've used those kind of clients in the past too, but I had many many problems with then like suddenly lose my configurations or had the client to stop working after a system update.
