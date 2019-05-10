@@ -12,8 +12,15 @@
   flex-wrap: wrap;
 }
 
-.blog-nav h1{
+.blog-nav a {
+  color: var(--orange);
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.blog-nav a h1 {
   padding: 1.1rem;
+  font-family: "Bungee Shade", cursive; 
 }
 
 .blog-nav #hb-menu {

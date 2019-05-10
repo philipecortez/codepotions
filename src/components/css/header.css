@@ -3,7 +3,7 @@
   margin-bottom: 20px;
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 562px 315px;
+  background-size: 512px 315px;
 }
 
 .blog-header .header-title {
@@ -42,5 +42,9 @@
 
   .blog-header h2:hover {
     text-decoration: underline;
+  }
+
+  .blog-header .post-title:hover {
+    text-decoration: none;
   }
 }

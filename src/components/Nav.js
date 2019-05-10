@@ -20,7 +20,9 @@ const toggleMobalBar = () => {
 
 const Nav = () => (
   <nav className="blog-nav">
-    <h1>CodePotions *</h1>
+    <Link to="/">
+      <h1>Code Potions</h1>
+    </Link>
     <div className="hb-init">
       <a href="#" onClick={() => toggleMobalBar()} id="hb-menu">
          <i className="fas fa-bars"></i>

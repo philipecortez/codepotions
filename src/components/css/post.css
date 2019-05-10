@@ -25,6 +25,7 @@
   color: var(--white);
   padding: 1rem;
   font-weight: 600;
+  font-family: "Roboto Mono", monospace;
   margin: 20px auto 20px;
   overflow: overlay;
   font-size: .9rem;
