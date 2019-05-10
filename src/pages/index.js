@@ -19,7 +19,8 @@ class BlogIndex extends React.Component {
                 img={node.frontmatter.img}
                 title={node.frontmatter.title}
                 excerpt={node.frontmatter.description}
-                key={node.fields.slug}
+                path={node.fields.slug}
+                key={node.frontmatter.id}
               />
             )
           })
@@ -49,6 +50,7 @@ export const pageQuery = graphql`
             title
             img
             description
+            id
           }
         }
       }

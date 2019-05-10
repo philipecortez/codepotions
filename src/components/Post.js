@@ -1,17 +1,21 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 const Post = ({
   img,
   title,
-  excerpt
+  excerpt,
+  path,
 }) => (
-  <div className="post">
-    <img src={img} alt="" style={{width: "440px", height: "246px"}}/>
-    <div className="post-resume">
-      <h3>{title}</h3>
-      <p>{excerpt}</p>
+  <Link to={path} className="post">
+    <div>
+      <img src={img} alt="" />
+      <div className="post-resume">
+        <h3>{title}</h3>
+        <p>{excerpt}</p>
+      </div>
     </div>
-  </div>
+  </Link>
 )
 
 export default Post

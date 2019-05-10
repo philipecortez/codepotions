@@ -1,0 +1,28 @@
+.post-content {
+  margin: 150px auto 80px;
+  width: 70%;
+  line-height: 1.9rem;
+}
+
+.post-content h1, h2, h3, h4, h5, h6 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.post-content h2 {
+  margin-top: 80px;
+  width: fit-content;
+  padding: .5rem;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  color: #FFF;
+}
+
+
+.post-content pre {
+  background: var(--gray);
+  color: #FFF;
+  padding: 1rem;
+  font-weight: 600;
+  margin: 20px auto 20px;
+}

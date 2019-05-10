@@ -13,6 +13,7 @@
   margin-top: 49px;
   background-color: #d3d8dc;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .blog-content .post:nth-child(1) {
