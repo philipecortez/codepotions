@@ -1,6 +1,6 @@
 .post-content {
   margin: 150px auto 80px;
-  width: 70%;
+  width: 90%;
   line-height: 1.9rem;
   color: var(--gray);
 }
@@ -24,4 +24,12 @@
   padding: 1rem;
   font-weight: 600;
   margin: 20px auto 20px;
+  overflow: overlay;
+  font-size: .9rem;
+}
+
+@media all and (min-width: 1025px) {
+  .post-content {
+    width: 70%;
+  }
 }
