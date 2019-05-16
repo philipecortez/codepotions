@@ -7,14 +7,24 @@ id: 1
 backgroundColor: "#8bd6f6"
 ---
 ## Introduction
-Some of us have the need to use a **Fortissl VPN** to connect to their company network or maybe for privacy reasons anywhays, it's doesn't matters.
+Now a days a lot of companies relies on VPN's to allow their employes and even customers to access their local network
+through the WEB in a secure way, one of the most popular VPN provider is FortiNET, the company is known by its reputation of 
+offer reliable, secure and practical security based products.
 
-The fact is I've seen that a lot of people tend to use some clients like the **fortisslvpn-client** to connect to those VPN's and I've used those kind of clients in the past too, but I had many many problems with then like suddenly lose my configurations or had the client to stop working after a system update.
+<br/>
+Despite their excelent VPN product and reputation, the official FortiClient app for linux doesn't allow the users to connect
+to a VPN using it, so I've used an unoficcial client called ForticlientSSLVpn but I've had a lot of headcaches due to the
+problems that it have, like unexpectedly lose all my configurations or my connection with the VPN, sometimes the program
+have just stopped to work after a system update which is very common in roling releases distributions like Arch Linux.
 
-To solve that I moved from those clients to **openfortivpn** and in this post I'm going to show how you can install and use **openfortivpn** on linux and put an end to the headaches caused by those antiquated clients.
+<br/>
+<br/>
+After struggle with it a while I discovered the Openfortivpn client which is a opensource forticlient that actually works, 
+and in this tutorial I'll teach you how to install and configure the Openfortisslvpn.
 
 ## Instalation 
-I'll give examples using two very popular linux distributions **Arch** and **Ubuntu** keep in mind that the installation process explained below can be used in a **Ubuntu** or **Arch** based distribution without big problems.
+I'll provide examples using two very popular linux distributions **Arch** and **Ubuntu** keep in mind that the installation 
+process explained below can be used in a **Ubuntu** or **Arch** based distribution without big problems.
 
 ### Arch Linux:
 For the porpouse of this post I'll use **yay** which is a very good and enjoyable AUR helper but fell free to use your favorite AUR helper.
@@ -113,3 +123,6 @@ $ sudo openfortivpn
 ```
 
 Please if you had problems running **openfotivpn** after read this small tutorial please tell me you can leave a comment our email me through the contact form and I'll do my best to help you.
+
+<br/>
+And if you want a GUI client check the excelent openfortigui https://github.com/theinvisible/openfortigui
