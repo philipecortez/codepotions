@@ -12,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 1;
 }
 
 /*==== TITLE STYLE =====*/
@@ -92,6 +93,7 @@
   opacity: .9;
   visibility: visible;
 }
+
 
 .hb-buttons {
   visibility: hidden;
