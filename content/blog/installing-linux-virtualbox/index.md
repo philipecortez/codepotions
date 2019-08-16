@@ -60,8 +60,6 @@ Acesse a Ubuntu Software Manager e no menu de busca procure por **virtualbox**
 
 Clique em **VirtualBox** e em seguida clique no botao **install** e coloque sua senha como na imagem abaixo
 
-![Instalador Ubuntu 2](./instalador5.png)
-<br/>
 ![Instalador Ubuntu Senha](./instalador6.png)
 
 Apos isto basta clicar em **launch** e pronto!
